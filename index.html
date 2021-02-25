@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/1b0fce17a3.js" crossorigin="anonymous"></script>
+      <title>Chess & Rook</title>
+  </head>
+  <body >
+
+    <!-- HEADER -->
+
+    <header id="homepage" >
+      <div></div>
+      <nav class="flex" id="nav">
+          <a href="#homepage" class="flex" id="logo" title="Retour haut de page"><img  src="Images/logo.jpg" alt="logo de l'association"></a>
+          <div class="flex">
+            <a id="about-nav" href="#about">A PROPOS</a>
+            <a id="services-nav" href="#services">SERVICES</a>
+            <a id="contact-nav" href="#contact">CONTACT</a>
+          </div>
+      </nav>
+    </header>
+
+    <!-- ABOUT -->
+
+    <section id="about" class="flex">
+      <h2>Notre association</h2>  
+      <p
+      >Notre association de loi 1901 vous offre un accèss vers le monde 
+      des échecs, que ce soit pour des parties entre amis ou bien de la compétition
+      vous tourverez chez nous le plaisir de jouer aux échecs.
+      </p>
+      <h2>Notre équipe</h2>
+      <div class="flex">
+        <figure class="flex">
+          <img class="Stylish Abdallah" src="Images/chess-homepage.jpg" alt="">
+          <figcaption> Nawal - Communication</figcaption>
+        </figure>
+        <figure class="flex">
+          <img class="Stylish Nawal" src="Images/Abdallah.png" alt="">
+          <figcaption>Abdallah - Coach</figcaption>
+        </figure>
+        <figure class="flex">
+          <img class= "Stylish Floris" src="Images/chess-homepage.jpg" alt="">
+          <figcaption>Floris - Manager</figcaption>
+        </figure>
+      </div>     
+    </section>
+
+    <!-- SERVICES -->
+
+    <section id="services" class="flex">
+      <div class="flex" id="slideShow" data-cycle-allow-wrap='true' data-cycle-fx='carousel' data-cycle-next='#next'
+      data-cycle-pager-template="&lt;a href='#' class='thumb'&gt;&lt;img src='{{children.0.src}}'&gt;&lt;/a&gt;"
+      data-cycle-pager='#thumbnails' data-cycle-prev='#prev' data-cycle-slides='figure' data-cycle-timeout='0' > 
+      </div>
+      <div class='slideshow-nav flex'>
+        <div id='prev'>
+          <button type="button">
+            <span class='fa fa-lg fa-chevron-left'></span>
+          </button>
+        </div>
+        <div id='next'>
+          <button type="button">
+            <span class='fa fa-lg fa-chevron-right'></span>
+          </button>
+        </div>
+        <div id='thumbnails'></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="flex">
+      <div class="container">
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="prénom-label" for="prénom">Prénom</label>
+            <input
+              type="text"
+              name="prénom"
+              id="prénom"
+              class="form-control"
+              placeholder="Placer votre Prénom ici"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="nom-label" for="nom">Nom</label>
+            <input
+              type="text"
+              name="nom"
+              id="nom"
+              class="form-control"
+              placeholder="Placer votre Nom ici"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <p>
+              Quels services vous intéressent? 
+              <span class="clue">(Plusieurs choix possibles)</span>
+            </p>      
+            <label>
+              <input
+                name="prefer"
+                value="Partie entre joueurs"
+                type="checkbox"
+                class="input-checkbox"
+              />Partie entre joueurs
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="Compétition"
+                type="checkbox"
+                class="input-checkbox"
+              />Compétition
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="Apprentissage"
+                type="checkbox"
+                class="input-checkbox"
+              />Apprentissage
+            </label>
+          </div>
+          <div class="form-group">
+            <label id="name-label" for="Objet">Objet</label>
+              <input
+                type="text"
+                name="objet"
+                id="objet"
+                class="form-control"
+                required
+              />
+          </div>       
+          <div class="form-group">
+            <p>Message</p>
+            <textarea
+              id="message"
+              class="input-textarea"
+              name="message"
+              placeholder="Ecrivez votre message ici!"
+            ></textarea>
+          </div>
+          <div class="form-group flex">
+            <button type="submit" id="submit" class="submit-button">
+              Envoyer
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer flex">
+      <div class="container">       
+        <div class="flex">
+          <h6>Source</h6>
+          <p>
+              logo : <a href="https://dribbble.com/brandosaur">brandosaur</a>
+          </p>
+          <p>
+            homepage : <a href="https://dribbble.com/matthieumartigny">Matthieu Martigny</a>
+          </p>
+        </div>      
+        <hr>
+      </div>
+      <div class="container">       
+        <div >
+          <p class="copyright-text">Nawal - Floris - Abdallah : Copyright &copy; 2021</p>
+        </div>
+        <div >
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPT JS -->
+
+    <script src="index.js"></script>
+  </body>
+</html>
